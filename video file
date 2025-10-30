@@ -1,0 +1,297 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Axle – Where Enterprise Meets the Road™</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-P727MNLQ');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GJLHL5TY16"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GJLHL5TY16');
+  </script>
+  <!-- End Google Analytics -->
+
+  <style>
+    :root {
+      --primary: #2F5C8F;
+      --accent: #4cbfa6;
+      --cta: #FF894C;
+      --bg: #f8fafd;
+      --dark: #0a133c;
+      --white: #fff;
+      --gray: #e5e7eb;
+      --glass: rgba(255,255,255,0.66);
+      --shadow: 0 8px 32px rgba(47,92,143,0.13);
+    }
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow);
+    }
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 4vw;
+    }
+    .logo {
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .nav-links a {
+      font-weight: 600;
+      color: var(--dark);
+      text-decoration: none;
+    }
+    .btn {
+      padding: 0.95rem 2.2rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      cursor: pointer;
+      border: none;
+      transition: all 0.2s;
+    }
+    .btn.cta {
+      background: var(--cta);
+      color: var(--white);
+    }
+    .btn.cta:hover {
+      background: #ff701f;
+    }
+    .btn.outline {
+      background: transparent;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+    .btn.outline:hover {
+      background: var(--primary);
+      color: var(--white);
+    }
+    .hero {
+      background: linear-gradient(120deg, #2F5C8F 0%, #4cbfa6 80%);
+      color: var(--white);
+      box-shadow: var(--shadow);
+    }
+    .hero-wrap {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 6rem 4vw 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .pre-headline {
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--cta);
+      margin-bottom: 1.5rem;
+      font-size: 1.1rem;
+    }
+    .hero h1 {
+      font-size: 3.75rem;
+      font-weight: 800;
+      margin: 0 0 1.2rem;
+      line-height: 1.07;
+    }
+    .hero .highlight {
+      color: var(--accent);
+    }
+    .hero p {
+      font-size: 1.29rem;
+      margin: 0 0 2rem;
+      color: #e5eaf7;
+      max-width: 600px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 1.2rem;
+      margin-bottom: 3rem;
+    }
+    .hero-stats {
+      display: flex;
+      gap: 3.5rem;
+      margin-bottom: 2.5rem;
+    }
+    .hero-stat-number {
+      font-size: 2.4rem;
+      font-weight: 800;
+    }
+    .trustedby-section {
+      padding: 2rem 0 2.5rem;
+    }
+    .trustedby-section h2 {
+      font-size: 1.12rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+    .trusted-logos {
+      display: flex;
+      gap: 2.6rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .trusted-logo {
+      background: var(--glass);
+      box-shadow: var(--shadow);
+      padding: 1rem 2.25rem;
+      border-radius: 9px;
+      color: #164d84;
+      font-weight: 700;
+    }
+    #demo-video {
+      padding: 2rem 4vw 4rem;
+      text-align: center;
+      background: var(--bg);
+      border-top: 1px solid var(--gray);
+    }
+    #demo-video h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    #demo-video video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 800px) {
+      .hero h1 { font-size: 2.1rem; }
+      .hero-stats { flex-direction: column; gap: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P727MNLQ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+  <nav>
+    <div class="container">
+      <div class="logo">Axle.</div>
+      <ul class="nav-links" aria-label="Site navigation">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <button class="btn cta" onclick="openModal('signup')">Get Started</button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-wrap">
+      <div class="pre-headline">B2B SaaS • Verified Logistics</div>
+      <h1>
+        Connect. <span class="highlight">Verify.</span> Deliver.<br />
+        <span style="font-size:2.1rem; font-weight:600; display:block; margin-top:8px;">
+          Real-Time. Fully Compliant. Nationwide.
+        </span>
+      </h1>
+      <p>
+        Where Enterprise Meets the Road™ — The only platform uniting
+        <mark style="background:transparent;color:var(--accent);font-weight:700;">freight</mark> and
+        <mark style="background:transparent;color:var(--cta);font-weight:bold;">charter</mark> operations.
+        Verified drivers. Instant compliance. Higher-margin B2B contracts,
+        zero logistics headaches.
+      </p>
+      <div class="hero-actions">
+        <button class="btn cta" id="demo-cta">Book a Demo</button>
+        <button class="btn outline" id="carrier-cta" style="border-color: var(--cta); color: var(--cta)">
+          Join as Carrier
+        </button>
+      </div>
+      <div class="hero-stats">
+        <div><div class="hero-stat-number">1,500+</div><div>Verified Carriers</div></div>
+        <div><div class="hero-stat-number">75+</div><div>Enterprise Clients</div></div>
+        <div><div class="hero-stat-number">$50M+</div><div>Contracts Processed</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trustedby-section">
+    <h2>Trusted by leading logistics and enterprise brands</h2>
+    <div class="trusted-logos">
+      <div class="trusted-logo">ABC Logistics</div>
+      <div class="trusted-logo">Global Freight Co</div>
+      <div class="trusted-logo">Metro Charter</div>
+      <div class="trusted-logo">Enterprise Transport</div>
+    </div>
+  </section>
+
+  <section id="demo-video">
+    <h2>See Axle in Action</h2>
+    <video autoplay muted loop playsinline controls>
+      <source src="axle-app-8-second-video-2_BPCCNXdn.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <script>
+    function openModal(type) {
+      alert('Modal open: ' + type);
+    }
+
+    document.getElementById('demo-cta').addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          send_to: 'G-GJLHL5TY16/demo_conversion',
+          event_category: 'CTA',
+          event_label: 'Book a Demo',
+        });
+      }
+    });
+
+    document.getElementById('carrier-cta').addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          send_to: 'G-GJLHL5TY16/carrier_conversion',
+          event_category: 'CTA',
+          event_label: 'Join as Carrier',
+        });
+      }
+    });
+  </script>
+</body>
+</html>
